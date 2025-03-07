@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+/* Variáveis de estilo */
+:root {
+  --primary-color: #000000;
+  --primary-color-dark: #ffffff;
+  --primary-color-light: #a3a3a3;
+  --white: #ffffff;
+  --max-width: 900px;
+  --gradient-1: linear-gradient(to right bottom, #f77d6b, #e626ac);
+  --gradient-2: linear-gradient(to right bottom, var(--white) 25%, var(--primary-color));
+}
+
+/* Reset e configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color-dark);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #e626ac;
+}
+
+/* Header e Navbar */
+.nav__bar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+}
+
+.nav__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav__logo a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.nav__links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__links a:hover {
+  color: #e626ac;
+}
+
+/* Estilos adicionais */
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+  margin-bottom: 100px;
+}
+
+
+
+header {
+    background-color: #ffffff;
+    color: #4e4caf;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding: 70px; 
+    position: relative;
+    margin-top: 60px;
+}
+
+.header-content {
+    max-width: 600px; /* Reduz a largura máxima */
+    padding-left: 20px;
+}
+
+.header-image {
+    max-width: 400px; /* Ajusta o tamanho da imagem */
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; /* Aumenta o tamanho da fonte */
+}
+
+header p {
+    margin: 0;
+    font-size: 1.5em; /* Aumenta o tamanho da fonte */
+}
+
+.btn-cadastro {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 40px; /* Ajusta o tamanho do texto */
+}
+
+/* Seções principais */
+main {
+    padding: 40px;
+    background: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    max-width: 1200px;  /* Aumenta a largura máxima */
+min-height: 600px;  /* Define uma altura mínima */
+}
+
+
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4e4caf;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+.refund-policy {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #384bbb;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.refund-policy p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+
+
+a {
+    color: #FFD700;
+}
+
+/* Estilos específicos para cada seção */
+.intro {
+    padding: 20px; /* Aumenta o padding */
+    text-align: center; /* Justifica o texto */
+    font-size: 25px; /* Aumenta o tamanho da fonte */
+    width: 100%; /* Ajusta a largura para ocupar 100% do espaço disponível */
+    align-items: left;
+    text-align: center;
+    color: #f77d6b;
+    background: linear-gradient; 
+}
+
+  
+  
+  .intro p {
+    margin-top: 20px;
+    font-size: 20px;
+    background: linear-gradient(
+      to left bottom,
+      #4e4caf 65%,
+      var(--primary-color-dark)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  
+
+
+
+.parcerias {
+    border-radius: 5px;
+    background-color: #fafafa;
+    text-align: center; /* Alinha todo o texto ao lado esquerdo */
+    padding: 20px; /* Aumenta o padding */
+    text-align: center; /* Justifica o texto */
+    font-size: 25px; /* Aumenta o tamanho da fonte */
+    width: 100%; /* Ajusta a largura para ocupar 100% do espaço disponível */
+}
+
+.parcerias h2 {
+    color: #4e4caf;
+    font-size: 60px; /* Aumenta o tamanho do texto do h2 */
+}
+
+.veja_como {
+    border-radius: 5px;
+    background-color: #fafafa;
+    text-align: center; /* Alinha todo o texto ao lado esquerdo */
+    padding: 20px; /* Aumenta o padding */
+    text-align: center; /* Justifica o texto */
+    font-size: 25px; /* Aumenta o tamanho da fonte */
+    width: 100%; /* Ajusta a largura para ocupar 100% do espaço disponível */
+}
+
+.veja_como h2{
+    color: #4e4caf;
+    font-size: 60px; /* Aumenta o tamanho do texto do h2 */
+}
+
+
+.btn-enter {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 40px;  /* Ajusta o tamanho do texto */
+}
+
+.marcas {
+    padding: 5px;
+    border-radius: 40px;
+    background-color: #fafafa;
+    text-align: center; /* Alinha todo o texto ao lado esquerdo */
+    height: 310px;
+    margin-bottom: 3rem
+}
+
+.marcas h2 {
+    color: #181818;
+    font-size: 40px; /* Aumenta o tamanho do texto do h2 */
+}
+
+
+/* Estilos específicos para o carrossel */
+.swiper-container {
+    width: 80%;
+    height: 30px; /* Ajuste o tamanho do carrossel */
+    margin: 5px auto;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* Divide em duas colunas */
+    }
+
+
+  .project__card {
+    max-width: 100%;
+    margin-inline: auto;
+    background-color:  #4e4caf;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+  
+  
+  .project__card__details {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .project__card__details p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-top: 20px;
+  }
+
+
+  .project__card__content {
+    display: flex;
+    flex-direction: column; /* Deixa os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: var(--white);
+}
+
+.project__card__content i {
+    font-size: 60px; /* Aumenta o tamanho do ícone */
+    margin-bottom: 10px; /* Adiciona espaço entre o ícone e o título */
+}
+
+
+.project__card__content_two {
+    display: flex;
+    flex-direction: column; /* Deixa os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: var(--white);
+}
+
+.project__card__content_two i {
+    font-size: 60px; /* Aumenta o tamanho do ícone */
+    margin-bottom: 10px; /* Adiciona espaço entre o ícone e o título */
+}
+
+.project__card__content_three {
+    display: flex;
+    flex-direction: column; /* Deixa os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    color: var(--white);
+}
+
+.project__card__content_three i {
+    font-size: 60px; /* Aumenta o tamanho do ícone */
+    margin-bottom: 10px; /* Adiciona espaço entre o ícone e o título */
+}
+
+
+.media_slr {
+    border-radius: 5px;
+    background-color: #fafafa;
+    text-align: center; /* Alinha todo o texto ao lado esquerdo */
+    padding: 20px; /* Aumenta o padding */
+    text-align: center; /* Justifica o texto */
+    font-size: 25px; /* Aumenta o tamanho da fonte */
+    width: 100%; /* Ajusta a largura para ocupar 100% do espaço disponível */
+}
+
+.media_slr h2{
+    color: #4e4caf;
+    font-size: 60px; /* Aumenta o tamanho do texto do h2 */
+}
+
+
+.job-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .job-description {
+    flex: 1;
+    padding-right: 20px; /* Espaço entre o texto e o contador */
+  }
+  
+  .salary-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+  
+  .elementor-counter-number-wrapper {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color: #4e4caf;
+  }
+  
+  .elementor-counter-number-prefix,
+  .elementor-counter-number-suffix {
+    font-size: 1.5rem;
+  }
+  
+  .salary-container span {
+    margin-left: 10px;
+  }
+  
+ .job-info h1, h2 {
+    color: #4e4caf;
+ }
+
+
+ @media screen and (max-width: 768px) {
+    /* Estilos para dispositivos móveis */
+    body {
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+
+    .nav__header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav__links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .section__container {
+        padding: 3rem 1rem;
+    }
+
+    .header-content {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .header-image {
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: none;
+    }
+
+    header h1 {
+        font-size: 2.5em; /* Ajusta o tamanho do texto */
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .btn-cadastro, .btn-enter {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    .parcerias h2, .veja_como h2, .marcas h2 {
+        font-size: 30px;
+    }
+
+    .project__grid {
+        grid-template-columns: 1fr 1fr; /* Duas colunas no celular */
+    }
+
+    .project__card__content, .project__card__content_two, .project__card__content_three {
+        flex-direction: column; /* Alinha os elementos verticalmente */
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .job-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .salary-container {
+        flex-direction: column;
+    }
+}
