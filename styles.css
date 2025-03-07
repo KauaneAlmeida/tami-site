@@ -415,8 +415,8 @@ a {
  .job-info h1, h2 {
     color: #4e4caf;
  }
-
- @media screen and (max-width: 768px) {
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
     .nav__header {
         flex-direction: column;
         padding: 1rem;
@@ -499,18 +499,4 @@ a {
 
     .salary-container {
         flex-direction: column;
-    }
-}
-
-.nav__header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: black;
-}
-
-body {
-    padding-top: 80px;
-}
+    
