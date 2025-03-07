@@ -470,18 +470,21 @@ a {
         font-size: 30px;
     }
 
-    /* Ajustando os cards para ficarem lado a lado */
+    /* Ajuste para os cards ficarem em fileira */
     .project__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajuste flexível */
+        display: flex;
+        flex-wrap: nowrap; /* Impede que os cards quebrem para a linha de baixo */
+        overflow-x: auto; /* Adiciona rolagem horizontal caso necessário */
         gap: 10px;
-        justify-content: center;
+        padding-bottom: 10px;
     }
 
     .project__card__content, 
     .project__card__content_two, 
     .project__card__content_three {
-        flex-direction: column;
+        flex: 0 0 auto; /* Garante que os cards não diminuam */
+        width: 45%; /* Define uma largura fixa para caberem na fileira */
+        min-width: 150px; /* Evita que fiquem muito pequenos */
     }
 
     .swiper-container {
