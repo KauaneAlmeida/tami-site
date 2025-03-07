@@ -417,7 +417,7 @@ a {
  }
 
 
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 768px) {
     .nav__header {
         flex-direction: column;
         padding: 1rem;
@@ -492,4 +492,17 @@ a {
     .salary-container {
         flex-direction: column;
     }
+}
+
+.nav__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: black;
+}
+
+body {
+    padding-top: 80px; /* Ajuste conforme a altura da navbar */
 }
