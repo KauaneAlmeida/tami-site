@@ -416,7 +416,7 @@ a {
     color: #4e4caf;
  }
 
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 768px) {
     .nav__header {
         flex-direction: column;
         padding: 1rem;
