@@ -7,7 +7,7 @@
   --primary-color-light: #a3a3a3;
   --white: #ffffff;
   --max-width: 900px;
-  --gradient-1: linear-gradient(to right bottom, #f77d6b, #e626ac);
+  --gradient-1: linear-gradient(to right bottom, #f77d6b,  #4e4caf);
   --gradient-2: linear-gradient(to right bottom, var(--white) 25%, var(--primary-color));
 }
 
@@ -40,7 +40,7 @@ a {
 }
 
 a:hover {
-  color: #e626ac;
+  color:  #4e4caf;
 }
 
 /* Header e Navbar */
@@ -80,7 +80,7 @@ a:hover {
 }
 
 .nav__links a:hover {
-  color: #e626ac;
+  color:  #4e4caf;
 }
 
 /* Estilos adicionais */
@@ -301,7 +301,9 @@ a {
     margin-inline: auto;
     background-color:  #4e4caf;
     border-radius: 2rem;
-    overflow: hidden;
+    margin-bottom: 4rem;
+   font-size: 2rem;
+   font-weight: 700;
   }
   
   
@@ -397,7 +399,7 @@ a {
   }
   
   .elementor-counter-number-wrapper {
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
     color: #4e4caf;
