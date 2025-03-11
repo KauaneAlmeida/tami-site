@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario – Renda Online</title>
+    <link rel="stylesheet" href="form.css">
+    <style>
+        /* Estilos para o spinner */
+        .spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #6A00F4;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Oculta o spinner inicialmente */
+        #loading {
+            display: none;
+            text-align: center;
+            font-size: 18px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <form id="meuFormulario">
+        <h1>Responda o questionário abaixo</h1>
+        
+        <label for="pergunta1">Por que você quer esta vaga de trabalho?</label><br>
+        <textarea id="pergunta1" name="pergunta1" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="pergunta2">Por que devemos aprovar você? *</label><br>
+        <textarea id="pergunta2" name="pergunta2" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="pergunta3">Qual o principal motivo de você estar buscando uma renda extra online? *</label><br>
+        <textarea id="pergunta3" name="pergunta3" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="pergunta4">Você já trabalha? *</label><br>
+        <input type="radio" id="trabalho_sim" name="trabalho" value="sim" required>
+        <label for="trabalho_sim">Sim</label><br>
+        <input type="radio" id="trabalho_nao" name="trabalho" value="nao" required>
+        <label for="trabalho_nao">Não</label><br>
+        
+        <label for="pergunta5">Em qual período do dia você iria realizar os serviços online? *</label><br>
+        <input type="text" id="pergunta5" name="pergunta5" required><br><br>
+        
+        <button type="submit" id="botaoEnviar" class="button_form">Enviar</button>
+    </form>
+
+    <!-- Texto e ícone de carregamento -->
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Aguarde, processando...</p>
+    </div>
+
+    <script>
+        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+            
+            let botao = document.getElementById("botaoEnviar");
+            let spinner = document.getElementById("loading");
+            let formulario = document.getElementById("meuFormulario");
+
+            botao.textContent = "Enviado"; // Muda o texto do botão
+            botao.disabled = true; // Desabilita o botão para evitar múltiplos cliques
+            formulario.style.display = "none"; // Esconde o formulário
+            spinner.style.display = "block"; // Mostra o spinner de carregamento
+
+            // Redireciona após um pequeno atraso
+            setTimeout(function() {
+                window.location.href = "criar-conta.html";
+            }, 3500); // Redireciona após 3.5 segundos
+        });
+    </script>
+</body>
+</html>

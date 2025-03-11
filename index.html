@@ -14,6 +14,7 @@
         }
     </style>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <!-- Link para o CSS do Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -21,34 +22,32 @@
 <body>
 
    <!-- Navbar (Cabeçalho fixo) -->
-<!-- Navbar (Cabeçalho fixo sem hambúrguer) -->
-<nav class="nav__bar">
+   <nav class="nav__bar fade-in">
     <div class="nav__header">
-      <div class="nav__logo">
-        <a href="#">Emprega Online</a>
+        <div class="nav__logo">
+            <a href="#">Emprega Online</a>
       </div>
       <ul class="nav__links">
         <li><a href="#home">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#Login">Contato</a></li>
       </ul>
     </div>
   </nav>
-
-    
-    <header id="home">
-        <div class="header-content">
-            <img src="img-pic.gif" alt="Imagem do Cabeçalho" class="header-image">
+  
+  
+     <header id="home" class="fade-in">
+        <div class="header-content fade-in">
             <h1>A maior plataforma de <br> contratação Home Office do <br> Brasil!</h1> <br> 
             <p>Com mais de 18.000 pessoas cadastradas e atuando <br> em vagas Home Office, somos a plataforma nº 01.<br>Vagas garantidas após o cadastro.</p>
-            <a href="https://tamires-silva-home-office.pay.yampi.com.br/r/8NFRF0WJ33" class="btn-cadastro">Cadastre-se agora</a>
+            <a href="#Login" class="btn-cadastro">Cadastre-se agora</a>
         </div>
     </header>
          <hr>
     <main>
-        <section id="sobre" class="intro">
-            <div class="intro-content">
+        <section id="sobre" class="intro fade-in">
+            <div class="intro-content fade-in">
                 <h2>Conectamos você com a <br> vaga que mais combina com <br> seu perfil</h2>
                 <p>O trabalho remoto ganhou grande popularidade <br> durante a pandemia. Trabalhar online 
                 passou a ser a <br> meta de muitos, não apenas no Brasil, mas <br> globalmente! Contudo, havia uma lacuna…<br>
@@ -61,64 +60,64 @@
             </div>
         </section>
         <hr>
-        <section id="servicos" class="parcerias">
+        <section id="servicos"class="parcerias fade-in">
             <h2>+100 Empresas <br> Parceiras!</h2>
             <p>Você terá acesso a oportunidades diárias para realizar serviços para empresas multinacionais e receber em dólar pelo seu serviço!</p>
-            <a href="https://tamires-silva-home-office.pay.yampi.com.br/r/8NFRF0WJ33" class="btn-enter">Cadastre-se agora</a>
+            <a href="#Login" class="btn-enter fade-in">Cadastre-se agora</a>
         </section>
         <hr>
-        <section id="contato" class="marcas">
+        <section id="contato" class="marcas fade-in">
             <h2>Marcas Parceiras</h2>
             <!-- Carrossel de Imagens -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+            <div class="swiper-container fade-in">
+                <div class="swiper-wrapper fade-in">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/amazon.png" alt="amazon.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/coca-cola.png" alt="coca-cola.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/mcdonalds.png" alt="mcdonalds.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/milka.png" alt="milka.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/nestle.png" alt="nestle.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/netflix.png" alt="netflix.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/shein.png" alt="shein.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/starbucks.png" alt="starbucks.png">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide fade-in">
                         <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/youtube.png" alt="youtube.png">
                     </div>
                 </div>
                 <!-- Adicionando a navegação do carrossel -->
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination fade-in"></div>
             </div>
         </section>
         
         <hr>
 
-        <section id="servicos" class="veja_como">
+        <section id="servicos" class="veja_como fade-in">
             <h2>Veja como funciona!</h2>
             <p>É simples, rápido e prático.</p>
         </section>
 
-        <section class="section__container project__container" id="project">
-            <div class="project__grid">
+        <section class="section__container project__container fade-in" id="project">
+            <div class="project__grid fade-in">
                 <!-- Primeiro Card -->
-                <div class="project__card">
-                    <div class="project__card__details">
-                        <div class="project__card__content">
-                            <i class="fa-solid fa-id-card" style="font-size: 50px;"></i>
+                <div class="project__card fade-in">
+                    <div class="project__card__details fade-in">
+                        <div class="project__card__content fade-in">
+                            <i class="fa-solid fa-id-card fade-in" style="font-size: 50px;"></i>
                             <h1>PROJETOS</h1>
                             <p>Preencha seus dados e <br>
                                deixe nosso sistema <br> encontrar a vaga que mais <br>
@@ -128,10 +127,10 @@
                 </div>
         
                 <!-- Segundo Card -->
-                <div class="project__card">
-                    <div class="project__card__details">
-                        <div class="project__card__content_two">
-                            <i class="fa-solid fa-laptop"></i>
+                <div class="project__card fade-in">
+                    <div class="project__card__details fade-in">
+                        <div class="project__card__content_two fade-in">
+                            <i class="fa-solid fa-laptop fade-in" ></i>
                             <h1>Acesso</h1>
                             <p>Adquira seu acesso a <br> plataforma, que é enviado <br>  imediatamente em seu <br> e-mail após a inscrição.</p>
                         </div>
@@ -139,10 +138,10 @@
                 </div>
         
                 <!-- Terceiro Card -->
-                <div class="project__card">
-                    <div class="project__card__details">
-                        <div class="project__card__content_three">
-                            <i class="fa-solid fa-brain"></i>
+                <div class="project__card fade-in">
+                    <div class="project__card__details fade-in">
+                        <div class="project__card__content_three fade-in">
+                            <i class="fa-solid fa-brain fade-in"></i>
                             <h1>Serviços</h1>
                             <p>Após a inscrição comece a <br> trabalhar imediatamente e <br> receber em dólar por isso. <br> Sem valor mínimo pra saque.</p>
                     </div>
@@ -152,18 +151,18 @@
 
         </section>
         <hr>
-        <section id="Contato" class="media_slr">
+        <section id="Contato" class="media_slr fade-in">
             <h2>Média dos salários</h2>
             <p>Esses são números reais que os membros de nossa plataforma ganham.</p>
         </section>
 
-        <section class="job-info">
-            <div class="job-description">
+        <section class="job-info fade-in">
+            <div class="job-description fade-in">
                 <h1>Função</h1>
                 <h2>Suporte ao cliente</h2>
                 <p>Atende clientes via chat para responder dúvidas e/ou anotar pedidos.</p>
             </div>
-            <div class="salary-container">
+            <div class="salary-container fade-in">
                 <div class="elementor-counter-number-wrapper">
                     <span class="elementor-counter-number-prefix">R$</span>
                     <span class="elementor-counter-number" data-duration="2000" data-to-value="2486" data-from-value="0" data-delimiter=",">2,486</span>
@@ -173,8 +172,8 @@
             </div>
         </section>
 
-        <section class="job-info">
-            <div class="job-description">
+        <section class="job-info fade-in">
+            <div class="job-description fade-in">
                 <h1>Função</h1>
                 <h2>Pesquisador de Mercado</h2>
                 <p>AParticipe de pesquisas para empresas multinacionais, respondendo questionários e avaliando
@@ -191,7 +190,7 @@
             </div>
         </section>
         
-        <section class="job-info">
+        <section class="job-info fade-in">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Redator de textos e artigos</h2>
@@ -207,7 +206,7 @@
             </div>
         </section>
         
-        <section class="job-info">
+        <section class="job-info fade-in">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Afiliado Shopee</h2>
@@ -223,13 +222,13 @@
             </div>
         </section>
         
-        <section class="job-info">
+        <section class="job-info fade-in">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Afiliado Ton</h2>
                 <p>Realiza a venda de máquinas Ton sem a necessidade de aparecer em Instagram ou quaisquer outras redes sociais.</p>
             </div>
-            <div class="salary-container">
+            <div class="salary-container fade-in">
                 <div class="elementor-counter-number-wrapper">
                     <span class="elementor-counter-number-prefix">R$</span>
                     <span class="elementor-counter-number" data-duration="2000" data-to-value="5762" data-from-value="0" data-delimiter=",">5,762</span>
@@ -238,16 +237,66 @@
                 <span>Por mês</span>
             </div>
         </section>
-    
+         <hr>
 
     </main>
-
-    <footer>
-        <p>&copy; 2025 Plataforma Emprega Online - Todos os direitos reservados.</p>
-        <div class="refund-policy">
-            <p><strong>Atenção:</strong> Não realizamos reembolso para o Método Home Office. Por se tratar de um produto digital e de acesso vitalício, não temos controle sobre quem acessa ou compartilha o material após a compra. Ao efetuar o pagamento, você declara estar ciente e de acordo com esta política, compreendendo que não há possibilidade de estorno.</p>
+<!-- Seção de Login dentro do Rodapé -->
+<footer>
+    <section id="Login" class="login-section">
+        <div class="login-container">
+            <h1>Faça um salário ainda esse mês</h1>
+            <p>Você só precisa criar uma conta para poder realizar uma rápida entrevista e acessar os trabalhos disponíveis.</p>
+            <form id="form">
+                <input type="text" name="name" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="whatsapp" placeholder="WhatsApp" required>
+                <a href="formulatio.html" class="button" id="criarContaBtn">Criar Conta</a>
+            </form>
         </div>
-    </footer>
+    </section>
+    <p>&copy; 2025 Plataforma Emprega Online - Todos os direitos reservados.</p>
+    <div class="refund-policy">
+        <p><strong>Atenção:</strong> Não realizamos reembolso para o Método Home Office. Por se tratar de um produto digital e de acesso vitalício, não temos controle sobre quem acessa ou compartilha o material após a compra. Ao efetuar o pagamento, você declara estar ciente e de acordo com esta política, compreendendo que não há possibilidade de estorno.</p>
+    </div>
+</footer>
+
+<script>
+    // Selecionando o botão "Criar Conta" e o formulário
+    const criarContaBtn = document.getElementById('criarContaBtn');
+    const form = document.getElementById('form');
+
+    // Adicionando um evento de clique
+    criarContaBtn.addEventListener('click', function(event) {
+        // Impede o link de ser seguido imediatamente
+        event.preventDefault();
+
+        // Verificando se todos os campos obrigatórios estão preenchidos
+        const inputs = form.querySelectorAll('input[required]');
+        let formValid = true;
+
+        // Verifica se algum campo obrigatório está vazio
+        inputs.forEach(input => {
+            if (!input.value) {
+                formValid = false;
+                input.style.borderColor = 'red'; // Destaca o campo não preenchido com borda vermelha
+            } else {
+                input.style.borderColor = ''; // Limpa o estilo se o campo estiver preenchido
+            }
+        });
+
+        // Se todos os campos estiverem preenchidos, exibe o delay e redireciona
+        if (formValid) {
+            // Exibe um pequeno delay de 3,5 segundos (3500 milissegundos)
+            setTimeout(function() {
+                window.location.href = criarContaBtn.href; // Redireciona para o link do botão
+            }, 2500); // 3500ms = 3,5 segundos
+        } else {
+            alert('Por favor, preencha todos os campos obrigatórios antes de continuar.');
+        }
+    });
+</script>
+
+
 
     <!-- Link para o JS do Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -266,6 +315,9 @@
                 clickable: true,
             },
         });
+        
     </script>
+      <script src="script.js"></script>
+      
 </body>
 </html>
