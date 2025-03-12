@@ -49,7 +49,6 @@ a:hover {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-image: url('https://images.unsplash.com/photo-1624280433509-b01afeaf68e5?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -123,12 +122,11 @@ header {
   0% { background-position: 0 0; }
   100% { background-position: 100% 0; }
 }
-
-
-
 .header-content {
   max-width: 600px; /* Reduz a largura máxima */
   padding-left: 20px;
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 2rem; /* Ajuste o espaçamento conforme necessário */
 }
 
 .header-image {
@@ -144,22 +142,14 @@ header h1 {
   margin: 0;
   font-size: 3em; /* Aumenta o tamanho da fonte */
   color: #fff;
+  margin-bottom: 1rem; /* Espaçamento inferior */
 }
 
 header p {
   margin: 0;
   font-size: 1.5em; /* Aumenta o tamanho da fonte */
-}
-
-.btn-cadastro {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px; /* Ajusta o tamanho do botão */
-  background-color: #4CAF50;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.2em; /* Ajusta o tamanho do texto */
+  color: #fff; /* Define a cor do texto */
+  margin-bottom: 2rem; /* Espaçamento inferior */
 }
 
 .btn-cadastro {
@@ -178,13 +168,9 @@ main {
   padding: 40px;
   background: #fff;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 
 }
 
-.header-content {
-  max-width: 600px; /* Reduz a largura máxima */
-  padding-left: 20px;
-}
 
 .header-image {
   max-width: 400px; /* Ajusta o tamanho da imagem */
@@ -265,10 +251,6 @@ section {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #333;
-}
-
 /* Estilos específicos para cada seção */
 .intro {
     padding: 20px; /* Aumenta o padding */
@@ -277,7 +259,7 @@ h2 {
     width: 100%; /* Ajusta a largura para ocupar 100% do espaço disponível */
     align-items: left;
     text-align: center;
-    color: #f77d6b;
+    color:  #4e4caf;
     background: linear-gradient; 
 }
 
@@ -300,8 +282,10 @@ h2 {
 
 
 .parcerias {
+    width: 100%;  /* Define a largura para 100% */
+    height: auto; 
     border-radius: 5px;
-    background-color: #fafafa;
+    background-color: #000524;
     text-align: center; /* Alinha todo o texto ao lado esquerdo */
     padding: 20px; /* Aumenta o padding */
     text-align: center; /* Justifica o texto */
@@ -310,7 +294,7 @@ h2 {
 }
 
 .parcerias h2 {
-    color: #4e4caf;
+    color: #ffffff;
     font-size: 60px; /* Aumenta o tamanho do texto do h2 */
 }
 
@@ -334,7 +318,7 @@ h2 {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px; /* Ajusta o tamanho do botão */
-    background-color: #4CAF50;
+    background-color: #137e33;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -454,11 +438,15 @@ h2 {
     width: 100%; /* Ajusta a largura para ocupar 100% do espaço disponível */
 }
 
-.media_slr h2{
-    color: #4e4caf;
-    font-size: 60px; /* Aumenta o tamanho do texto do h2 */
+.media_slr h1 {
+  color: #4e4caf;
+  font-size: 60px; /* Aumenta o tamanho do texto do h1 */
 }
 
+.media_slr h2 {
+  color: #4e4caf;
+  font-size: 40px; /* Ajusta o tamanho do texto do h2 */
+}
 
 .job-info {
     display: flex;
@@ -494,9 +482,11 @@ h2 {
     margin-left: 10px;
   }
   
- .job-info h1, h2 {
+  .job-info h1, .job-info h2, .job-info p { 
     color: #4e4caf;
- }
+}
+
+
 
 /* Estilo da seção de login */
 .login-section {
@@ -590,7 +580,6 @@ footer {
     color: #ffffff;
 }
 
-
 @media screen and (max-width: 768px) {
   .nav__header {
       display: flex;
@@ -605,6 +594,15 @@ footer {
       background: black;
       height: 60px; /* Mantém uma altura padrão */
   }
+
+  .swiper-container {
+    width: 100%; /* Ajuste o tamanho do carrossel para ocupar toda a largura da tela */
+    height: 150px; /* Ajuste a altura do carrossel */
+}
+
+.swiper-slide img {
+    height: 100%; /* Garante que as imagens se ajustem corretamente à altura do carrossel */
+}
 
   .nav__links {
       display: none; /* Esconde os links por padrão */
@@ -622,16 +620,6 @@ footer {
       display: flex; /* Exibe os links quando ativo */
   }
 
-  /* Botão de menu (hambúrguer) */
-  .menu-toggle {
-      display: block;
-      background: none;
-      border: none;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-  }
-
   /* Ajuste para garantir que o conteúdo não sobreponha a navbar */
   header {
       margin-top: 70px;
@@ -646,6 +634,35 @@ footer {
       display: none; /* Remove a imagem no mobile */
   }
 
+  .header-content {
+      padding: 1rem; /* Ajuste o espaçamento para dispositivos móveis */
+      text-align: left; /* Alinha o texto à esquerda para dispositivos móveis */
+  }
+
+  header h1 {
+      font-size: 2rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
+  }
+
+  header p {
+      font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
+  }
+  .parcerias h2 {
+    font-size: 2rem;
+}
+
+.veja_como h2{
+  font-size: 2.5rem;
+}
+
+  .btn-cadastro {
+      font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
+      padding: 10px 15px; /* Ajuste o espaçamento interno do botão para dispositivos móveis */
+  }
+  .btn-enter {
+    font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
+    padding: 10px 15px;
+
+  }
   .project__grid {
       grid-template-columns: 1fr; /* Empilha os cards no mobile */
   }
@@ -656,6 +673,7 @@ footer {
       flex-direction: column;
   }
 }
+
 
 /* Navbar geral */
 .nav__header {
@@ -676,5 +694,3 @@ footer {
 body {
   padding-top: 60px;
 }
-
-
