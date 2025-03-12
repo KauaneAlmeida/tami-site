@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulario – Renda Online</title>
@@ -18,8 +19,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         /* Oculta o spinner inicialmente */
@@ -31,28 +37,29 @@
         }
     </style>
 </head>
+
 <body>
     <form id="meuFormulario">
         <h1>Responda o questionário abaixo</h1>
-        
+
         <label for="pergunta1">Por que você quer esta vaga de trabalho?</label><br>
         <textarea id="pergunta1" name="pergunta1" rows="4" cols="50"></textarea><br><br>
-        
+
         <label for="pergunta2">Por que devemos aprovar você? *</label><br>
         <textarea id="pergunta2" name="pergunta2" rows="4" cols="50" required></textarea><br><br>
-        
+
         <label for="pergunta3">Qual o principal motivo de você estar buscando uma renda extra online? *</label><br>
         <textarea id="pergunta3" name="pergunta3" rows="4" cols="50" required></textarea><br><br>
-        
+
         <label for="pergunta4">Você já trabalha? *</label><br>
         <input type="radio" id="trabalho_sim" name="trabalho" value="sim" required>
         <label for="trabalho_sim">Sim</label><br>
         <input type="radio" id="trabalho_nao" name="trabalho" value="nao" required>
         <label for="trabalho_nao">Não</label><br>
-        
+
         <label for="pergunta5">Em qual período do dia você iria realizar os serviços online? *</label><br>
         <input type="text" id="pergunta5" name="pergunta5" required><br><br>
-        
+
         <button type="submit" id="botaoEnviar" class="button_form">Enviar</button>
     </form>
 
@@ -63,9 +70,9 @@
     </div>
 
     <script>
-        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+        document.getElementById("meuFormulario").addEventListener("submit", function (event) {
             event.preventDefault(); // Evita o envio padrão do formulário
-            
+
             let botao = document.getElementById("botaoEnviar");
             let spinner = document.getElementById("loading");
             let formulario = document.getElementById("meuFormulario");
@@ -76,10 +83,11 @@
             spinner.style.display = "block"; // Mostra o spinner de carregamento
 
             // Redireciona após um pequeno atraso
-            setTimeout(function() {
+            setTimeout(function () {
                 window.location.href = "criar-conta.html";
             }, 3500); // Redireciona após 3.5 segundos
         });
     </script>
 </body>
+
 </html>

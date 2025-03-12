@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br"> <!-- Correção aqui -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +17,11 @@
     </style>
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLB746L9XX" onerror="console.error('Erro ao carregar Google Analytics')"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BLB746L9XX"
+        onerror="console.error('Erro ao carregar Google Analytics')"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-BLB746L9XX');
     </script>
@@ -34,23 +36,23 @@
             w.TiktokAnalyticsObject = t;
             var ttq = w[t] = w[t] || [];
             ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
-            
-            ttq.setAndDefer = function (t, e) { 
-                t[e] = function () { 
-                    t.push([e].concat(Array.prototype.slice.call(arguments, 0))); 
-                }; 
+
+            ttq.setAndDefer = function (t, e) {
+                t[e] = function () {
+                    t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+                };
             };
 
             for (var i = 0; i < ttq.methods.length; i++) {
                 ttq.setAndDefer(ttq, ttq.methods[i]);
             }
 
-            ttq.instance = function (t) { 
-                var e = ttq._i[t] || []; 
+            ttq.instance = function (t) {
+                var e = ttq._i[t] || [];
                 for (var n = 0; n < ttq.methods.length; n++) {
-                    ttq.setAndDefer(e, ttq.methods[n]); 
+                    ttq.setAndDefer(e, ttq.methods[n]);
                 }
-                return e; 
+                return e;
             };
 
             ttq.load = function (e, n) {
@@ -67,7 +69,7 @@
                 n.type = "text/javascript";
                 n.async = true;
                 n.src = r + "?sdkid=" + e + "&lib=" + t;
-                n.onerror = function () { 
+                n.onerror = function () {
                     console.error("Erro ao carregar o TikTok Pixel! Verifique se o URL está correto.");
                 };
                 e = document.getElementsByTagName("script")[0];
@@ -100,30 +102,33 @@
     <header id="home" class="fade-in">
         <div class="header-content fade-in">
             <img src="img-pic.gif" alt="Imagem do Cabeçalho" class="header-image">
-            <h1>A maior plataforma de <br> contratação Home Office do <br> Brasil!</h1> <br> 
-            <p>Com mais de 18.000 pessoas cadastradas e atuando <br> em vagas Home Office, somos a plataforma nº 01.<br>Vagas garantidas após o cadastro.</p>
+            <h1>A maior plataforma de <br> contratação Home Office do <br> Brasil!</h1> <br>
+            <p>Com mais de 18.000 pessoas cadastradas e atuando <br> em vagas Home Office, somos a plataforma nº
+                01.<br>Vagas garantidas após o cadastro.</p>
             <a href="#Login" class="btn-cadastro">Cadastre-se agora</a>
         </div>
     </header>
-         <hr>
+    <hr>
     <main>
         <section id="sobre" class="intro">
             <div class="intro-content">
                 <h2>Conectamos você com a <br> vaga que mais combina com <br> seu perfil</h2>
-                <p>O trabalho remoto ganhou grande popularidade <br> durante a pandemia. Trabalhar online 
-                passou a ser a <br> meta de muitos, não apenas no Brasil, mas <br> globalmente! Contudo, havia uma lacuna…<br>
-                No Brasil, faltava uma plataforma que destacasse de forma<br> 
-                acessível as melhores oportunidades de trabalho online, algo que <br>
-                na Europa já era uma realidade há mais de uma década. <br>
-                Agora, essa realidade está ao seu alcance. Estabelecemos <br> 
-                parcerias com empresas europeias e trouxemos essa avançada <br>
-                plataforma tecnológica para o Brasil. <br> </p>
+                <p>O trabalho remoto ganhou grande popularidade <br> durante a pandemia. Trabalhar online
+                    passou a ser a <br> meta de muitos, não apenas no Brasil, mas <br> globalmente! Contudo, havia uma
+                    lacuna…<br>
+                    No Brasil, faltava uma plataforma que destacasse de forma<br>
+                    acessível as melhores oportunidades de trabalho online, algo que <br>
+                    na Europa já era uma realidade há mais de uma década. <br>
+                    Agora, essa realidade está ao seu alcance. Estabelecemos <br>
+                    parcerias com empresas europeias e trouxemos essa avançada <br>
+                    plataforma tecnológica para o Brasil. <br> </p>
             </div>
         </section>
         <hr>
-        <section id="servicos"class="parcerias fade-in">
+        <section id="servicos" class="parcerias fade-in">
             <h2>+100 Empresas <br> Parceiras!</h2>
-            <p>Você terá acesso a oportunidades diárias para realizar serviços para empresas multinacionais e receber em dólar pelo seu serviço!</p>
+            <p>Você terá acesso a oportunidades diárias para realizar serviços para empresas multinacionais e receber em
+                dólar pelo seu serviço!</p>
             <a href="#Login" class="btn-enter">Cadastre-se agora</a>
         </section>
         <hr>
@@ -133,38 +138,47 @@
             <div class="swiper-container fade-in">
                 <div class="swiper-wrapper fade-in">
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/amazon.png" alt="amazon.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/amazon.png"
+                            alt="amazon.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/coca-cola.png" alt="coca-cola.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/coca-cola.png"
+                            alt="coca-cola.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/mcdonalds.png" alt="mcdonalds.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/mcdonalds.png"
+                            alt="mcdonalds.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/milka.png" alt="milka.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/milka.png"
+                            alt="milka.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/nestle.png" alt="nestle.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/nestle.png"
+                            alt="nestle.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/netflix.png" alt="netflix.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/netflix.png"
+                            alt="netflix.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/shein.png" alt="shein.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/shein.png"
+                            alt="shein.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/starbucks.png" alt="starbucks.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/starbucks.png"
+                            alt="starbucks.png">
                     </div>
                     <div class="swiper-slide fade-in">
-                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/youtube.png" alt="youtube.png">
+                        <img src="https://plataformastrabalhosonline.com/wp-content/uploads/2024/06/youtube.png"
+                            alt="youtube.png">
                     </div>
                 </div>
                 <!-- Adicionando a navegação do carrossel -->
                 <div class="swiper-pagination fade-in"></div>
             </div>
         </section>
-        
+
         <hr>
 
         <section id="servicos" class="veja_como">
@@ -181,34 +195,36 @@
                             <i class="fa-solid fa-id-card fade-in" style="font-size: 50px;"></i>
                             <h1>PROJETOS</h1>
                             <p>Preencha seus dados e <br>
-                               deixe nosso sistema <br> encontrar a vaga que mais <br>
-                               combina com seu perfil.</p>
+                                deixe nosso sistema <br> encontrar a vaga que mais <br>
+                                combina com seu perfil.</p>
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Segundo Card -->
                 <div class="project__card fade-in">
                     <div class="project__card__details fade-in">
                         <div class="project__card__content_two fade-in">
-                            <i class="fa-solid fa-laptop fade-in" ></i>
+                            <i class="fa-solid fa-laptop fade-in"></i>
                             <h1>Acesso</h1>
-                            <p>Adquira seu acesso a <br> plataforma, que é enviado <br>  imediatamente em seu <br> e-mail após a inscrição.</p>
+                            <p>Adquira seu acesso a <br> plataforma, que é enviado <br> imediatamente em seu <br> e-mail
+                                após a inscrição.</p>
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Terceiro Card -->
                 <div class="project__card fade-in">
                     <div class="project__card__details">
                         <div class="project__card__content_three">
                             <i class="fa-solid fa-brain"></i>
                             <h1>Serviços</h1>
-                            <p>Após a inscrição comece a <br> trabalhar imediatamente e <br> receber em dólar por isso. <br> Sem valor mínimo pra saque.</p>
+                            <p>Após a inscrição comece a <br> trabalhar imediatamente e <br> receber em dólar por isso.
+                                <br> Sem valor mínimo pra saque.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
- 
+
 
         </section>
         <hr>
@@ -226,7 +242,8 @@
             <div class="salary-container fade-in">
                 <div class="elementor-counter-number-wrapper">
                     <span class="elementor-counter-number-prefix">R$</span>
-                    <span class="elementor-counter-number" data-duration="2000" data-to-value="2486" data-from-value="0" data-delimiter=",">2,486</span>
+                    <span class="elementor-counter-number" data-duration="2000" data-to-value="2486" data-from-value="0"
+                        data-delimiter=",">2,486</span>
                     <span class="elementor-counter-number-suffix"></span>
                 </div>
                 <span>Por mês</span>
@@ -235,19 +252,21 @@
 
         <section class="job-info">
             <div class="job-description">
-              <h1>Função</h1>
-              <h2>Pesquisador de Mercado</h2>
-              <p>Participe de pesquisas para empresas multinacionais, respondendo questionários e avaliando produtos e serviços.</p>
+                <h1>Função</h1>
+                <h2>Pesquisador de Mercado</h2>
+                <p>Participe de pesquisas para empresas multinacionais, respondendo questionários e avaliando produtos e
+                    serviços.</p>
             </div>
             <div class="salary-container">
-              <div class="elementor-counter-number-wrapper">
-                <span class="elementor-counter-number-prefix">R$</span>
-                <span class="elementor-counter-number" data-duration="2000" data-to-value="2500" data-from-value="0" data-delimiter=",">2,500</span>
-                <span class="elementor-counter-number-suffix"></span>
-              </div>
-              <span>Por mês</span>
+                <div class="elementor-counter-number-wrapper">
+                    <span class="elementor-counter-number-prefix">R$</span>
+                    <span class="elementor-counter-number" data-duration="2000" data-to-value="2500" data-from-value="0"
+                        data-delimiter=",">2,500</span>
+                    <span class="elementor-counter-number-suffix"></span>
+                </div>
+                <span>Por mês</span>
             </div>
-          </section>
+        </section>
 
         <section class="job-info fade-in">
             <div class="job-description">
@@ -258,93 +277,104 @@
             <div class="salary-container">
                 <div class="elementor-counter-number-wrapper">
                     <span class="elementor-counter-number-prefix">R$</span>
-                    <span class="elementor-counter-number" data-duration="2000" data-to-value="2317" data-from-value="0" data-delimiter=",">2,317</span>
+                    <span class="elementor-counter-number" data-duration="2000" data-to-value="2317" data-from-value="0"
+                        data-delimiter=",">2,317</span>
                     <span class="elementor-counter-number-suffix"></span>
                 </div>
                 <span>Por mês</span>
             </div>
         </section>
-        
+
         <section class="job-info fade-in">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Afiliado Shopee</h2>
-                <p>Realiza a venda de produtos Shopee sem a necessidade de aparecer em Instagram ou quaisquer outras redes sociais.</p>
+                <p>Realiza a venda de produtos Shopee sem a necessidade de aparecer em Instagram ou quaisquer outras
+                    redes sociais.</p>
             </div>
             <div class="salary-container">
                 <div class="elementor-counter-number-wrapper">
                     <span class="elementor-counter-number-prefix">R$</span>
-                    <span class="elementor-counter-number" data-duration="2000" data-to-value="4862" data-from-value="0" data-delimiter=",">4,862</span>
+                    <span class="elementor-counter-number" data-duration="2000" data-to-value="4862" data-from-value="0"
+                        data-delimiter=",">4,862</span>
                     <span class="elementor-counter-number-suffix"></span>
                 </div>
                 <span>Por mês</span>
             </div>
         </section>
-        
+
         <section class="job-info fade-in">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Afiliado Ton</h2>
-                <p>Realiza a venda de máquinas Ton sem a necessidade de aparecer em Instagram ou quaisquer outras redes sociais.</p>
+                <p>Realiza a venda de máquinas Ton sem a necessidade de aparecer em Instagram ou quaisquer outras redes
+                    sociais.</p>
             </div>
             <div class="salary-container fade-in">
                 <div class="elementor-counter-number-wrapper">
                     <span class="elementor-counter-number-prefix">R$</span>
-                    <span class="elementor-counter-number" data-duration="2000" data-to-value="5762" data-from-value="0" data-delimiter=",">5,762</span>
+                    <span class="elementor-counter-number" data-duration="2000" data-to-value="5762" data-from-value="0"
+                        data-delimiter=",">5,762</span>
                     <span class="elementor-counter-number-suffix"></span>
                 </div>
                 <span>Por mês</span>
             </div>
         </section>
-         <hr>
-     </main>
-         <footer>
-            <section id="Login" class="login-section">
-                <div class="login-container">
-                    <h1>Faça um salário ainda esse mês</h1>
-                    <p>Você só precisa criar uma conta para poder realizar uma rápida entrevista e acessar os trabalhos disponíveis.</p>
-                    <form id="form" action="https://script.google.com/macros/s/AKfycbweOnQ5GMWpe4ODLOJzA88YYuL3XqYAQkxe9wmWcUZa5iBb2f7z5udKkozPjNmkCYxCxQ/exec" method="POST">
-                        <input type="text" name="nome" placeholder="Nome" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
-                     
-                        <button type="submit" class="button" id="criarContaBtn">Criar Conta</button>
-                    </form>
-                </div>
-            </section>
-        
-            <p>&copy; 2025 Plataforma Emprega Online - Todos os direitos reservados.</p>
-            
-            <div class="refund-policy">
-                <p><strong>Atenção:</strong> Não realizamos reembolso para o Método Home Office. Por se tratar de um produto digital e de acesso vitalício, não temos controle sobre quem acessa ou compartilha o material após a compra. Ao efetuar o pagamento, você declara estar ciente e de acordo com esta política, compreendendo que não há possibilidade de estorno.</p>
+        <hr>
+    </main>
+    <footer>
+        <section id="Login" class="login-section">
+            <div class="login-container">
+                <h1>Faça um salário ainda esse mês</h1>
+                <p>Você só precisa criar uma conta para poder realizar uma rápida entrevista e acessar os trabalhos
+                    disponíveis.</p>
+                <form id="form"
+                    action="https://script.google.com/macros/s/AKfycbweOnQ5GMWpe4ODLOJzA88YYuL3XqYAQkxe9wmWcUZa5iBb2f7z5udKkozPjNmkCYxCxQ/exec"
+                    method="POST">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+
+                    <button type="submit" class="button" id="criarContaBtn">Criar Conta</button>
+                </form>
             </div>
-        </footer>
-        
-        <script>
-            // Captura o envio do formulário
-            document.getElementById('form').onsubmit = function(event) {
-                event.preventDefault();  
-        
-                var formData = new FormData(event.target);
-        
-                fetch(event.target.action, {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.text())  
+        </section>
+
+        <p>&copy; 2025 Plataforma Emprega Online - Todos os direitos reservados.</p>
+
+        <div class="refund-policy">
+            <p><strong>Atenção:</strong> Não realizamos reembolso para o Método Home Office. Por se tratar de um produto
+                digital e de acesso vitalício, não temos controle sobre quem acessa ou compartilha o material após a
+                compra. Ao efetuar o pagamento, você declara estar ciente e de acordo com esta política, compreendendo
+                que não há possibilidade de estorno.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Captura o envio do formulário
+        document.getElementById('form').onsubmit = function (event) {
+            event.preventDefault();
+
+            var formData = new FormData(event.target);
+
+            fetch(event.target.action, {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.text())
                 .then(data => {
-                
-                    window.location.href = "formulario.html";  
+
+                    window.location.href = "formulario.html";
                 })
                 .catch(error => {
                     alert("Erro ao enviar o formulário. Tente novamente.");
                 });
-            };
-        </script>
-        
+        };
+    </script>
 
-        <script defer src="script.js"></script>
-        
+
+    <script defer src="script.js"></script>
+
     <!-- Link para o JS do Swiper -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -362,9 +392,10 @@
                 clickable: true,
             },
         });
-        
+
     </script>
-    
-   
+
+
 </body>
+
 </html>
