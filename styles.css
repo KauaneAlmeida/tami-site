@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 /* Variáveis de estilo */
+/* Variáveis de estilo */
 :root {
   --primary-color: #000524;
   --primary-color-dark:  #000080;
@@ -9,7 +10,7 @@
   --max-width: 900px;
   --gradient-1: linear-gradient(to right bottom, #f77d6b, #000000);
   --gradient-2: linear-gradient(to right bottom, var(--white) 25%, var(--primary-color));
-  --login-background: #6A00F4; 
+  --login-background: #6A00F4; /* Adiciona a variável para fundo da seção de login */
 }
 
 /* Reset e configurações gerais */
@@ -60,7 +61,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem; 
+  padding: 0.5rem; /* Ajuste o padding para diminuir o tamanho da barra */
   
 }
 
@@ -73,19 +74,19 @@ a:hover {
 .nav__links {
   display: flex;
   flex-direction: row;
-  gap: 4rem; 
+  gap: 4rem; /* Espaçamento entre os itens de navegação */
 }
 
 .nav__links a {
-  font-size: 20px; 
-  text-decoration: none; 
-  color: var(--white); 
-  padding: 0.5rem; 
+  font-size: 20px; /* Ajuste o tamanho das letras conforme necessário */
+  text-decoration: none; /* Remove o sublinhado padrão */
+  color: var(--white); /* Ajusta a cor do texto */
+  padding: 0.5rem; /* Adiciona um pouco de espaçamento */
   transition: 0.3s;
 }
 
 .nav__links a:hover {
-  color: #4e4caf; 
+  color: #4e4caf; /* Cor ao passar o mouse */
 }
 
 /* Estilos adicionais */
@@ -111,9 +112,9 @@ header {
   text-align: left;
   padding: 70px;
   position: relative;
-  margin-top: 0; 
-  min-height: 400px; 
-  animation: moveBackground 30s infinite linear; 
+  margin-top: 0; /* Reduz a distância entre o header e a navbar */
+  min-height: 400px; /* Define uma altura mínima para exibir bem o GIF */
+  animation: moveBackground 30s infinite linear; /* Adiciona a animação */
 }
 
 /* Define a animação moveBackground */
@@ -122,14 +123,14 @@ header {
   100% { background-position: 100% 0; }
 }
 .header-content {
-  max-width: 600px;
+  max-width: 600px; /* Reduz a largura máxima */
   padding-left: 20px;
-  text-align: left; 
-  padding: 2rem; 
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 2rem; /* Ajuste o espaçamento conforme necessário */
 }
 
 .header-image {
-  max-width: 400px; 
+  max-width: 400px; /* Ajusta o tamanho da imagem */
   height: auto;
   position: absolute;
   right: 10%;
@@ -139,27 +140,27 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 3em;
+  font-size: 3em; /* Aumenta o tamanho da fonte */
   color: #fff;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem; /* Espaçamento inferior */
 }
 
 header p {
   margin: 0;
-  font-size: 1.5em; 
-  color: #fff; 
-  margin-bottom: 2rem; 
+  font-size: 1.5em; /* Aumenta o tamanho da fonte */
+  color: #fff; /* Define a cor do texto */
+  margin-bottom: 2rem; /* Espaçamento inferior */
 }
 
 .btn-cadastro {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px; 
+  padding: 10px 20px; /* Ajusta o tamanho do botão */
   background-color: #4CAF50;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 1.2em; 
+  font-size: 1.2em; /* Ajusta o tamanho do texto */
 }
 
 /* Seções principais */
@@ -172,15 +173,32 @@ main {
 
 
 .header-image {
-  max-width: 400px; 
+  max-width: 400px; /* Ajusta o tamanho da imagem */
   height: auto;
   position: absolute;
   right: 10%;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0; 
-  animation: fadeIn 3s ease-in forwards; 
+  opacity: 0; /* Começa invisível */
+  animation: fadeIn 3s ease-in forwards; /* Adiciona a animação de fade-in */
 }
+
+.header-shadow {
+  width: 100%; /* Ajusta a largura da imagem para 100% do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Centraliza a imagem */
+  opacity: 0.1; /* Define a opacidade para que a imagem pareça uma sombra mais escura */
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+  animation: fadeIn 3s ease-in forwards; /* Adiciona a animação de fade-in */
+}
+
+.header-shadow {
+  filter: brightness(0.5); /* Diminui o brilho para escurecer */
+}
+
 
 @keyframes fadeIn {
   0% {
@@ -194,24 +212,24 @@ main {
 
 header h1 {
   margin: 0;
-  font-size: 3em; 
+  font-size: 3em; /* Aumenta o tamanho da fonte */
   color: #fff;
 }
 
 header p {
   margin: 0;
-  font-size: 1.5em; 
+  font-size: 1.5em; /* Aumenta o tamanho da fonte */
 }
 
 .btn-cadastro {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px; 
+  padding: 10px 20px; /* Ajusta o tamanho do botão */
   background-color: #4CAF50;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  font-size: 40px; 
+  font-size: 40px; /* Ajusta o tamanho do texto */
 }
 
 /* Seções principais */
@@ -226,12 +244,12 @@ main {
 .btn-cadastro {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px; 
+    padding: 10px 20px; /* Ajusta o tamanho do botão */
     background-color: #137e33;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 40px; 
+    font-size: 40px; /* Ajusta o tamanho do texto */
 }
 
 /* Seções principais */
@@ -366,7 +384,7 @@ section {
   .project__card {
     max-width: 100%;
     margin-inline: auto;
-    background-color:  #4e4caf;
+    background-color:  #000524;
     border-radius: 2rem;
     margin-bottom: 4rem;
    font-size: 2rem;
@@ -422,13 +440,12 @@ section {
     flex-direction: column; 
     align-items: center;
     text-align: center; 
-    color: var(--white);
+    color: #fff;
 }
 
 .project__card__content_three i {
     font-size: 60px; 
     margin-bottom: 10px; 
-    color: var(--white);
 }
 
 
@@ -583,180 +600,146 @@ footer {
     font-size: 0.9rem;
     color: #ffffff;
 }
-
 @media screen and (max-width: 768px) {
   .nav__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between; 
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      background: black;
-      height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: black;
+    height: 60px; 
   }
+  
   .swiper-container {
     width: 100%; 
     height: 150px; 
-}
+  }
 
-.swiper-slide img {
+  .swiper-slide img {
     height: 100%; 
-}
+  }
 
   .nav__links {
-      display: none; 
-      flex-direction: column;
-      position: absolute;
-      top: 60px; 
-      left: 0;
-      width: 100%;
-      background: black;
-      text-align: center;
-      padding: 1rem 0;
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background: black;
+    text-align: center;
+    padding: 1rem 0;
   }
+
   .job-info {
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc; 
     margin-bottom: 20px; 
     box-sizing: border-box; 
   }
-  
+
   .job-description h1, .job-description h2, .job-description p {
     color: #4e4caf;
   }
-  
+
   .salary-container {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     box-sizing: border-box; 
   }
-  
+
   .elementor-counter-number-wrapper {
-    font-size: 36px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center; 
     color: #4e4caf;
     flex-wrap: wrap; 
   }
-  
+
   .elementor-counter-number-prefix,
   .elementor-counter-number-suffix {
-    font-size: 18px;
+    font-size: 16px; 
   }
-  
+
   .salary-container span {
     margin-top: 10px; 
-    padding-left: 10px; 
     text-align: center; 
   }
 
-  @media screen and (max-width: 768px) {
-    .job-info {
-      padding: 10px;
-    }
-  
-    .salary-container {
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      font-size: 16px; 
-      padding: 10px; 
-    }
-  
-    .elementor-counter-number-wrapper {
-      font-size: 30px; 
-    }
-  
-    .elementor-counter-number-prefix,
-    .elementor-counter-number-suffix {
-      font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos móveis */
-    }
-  
-    .salary-container span {
-      margin-top: 10px; /* Adicione espaçamento superior para alinhamento em coluna */
-      margin-left: 0; /* Remova o espaçamento à esquerda para dispositivos móveis */
-      text-align: center; /* Centraliza o texto */
-    }
-  }
-
-
-
   .nav__links.active {
-      display: flex; /* Exibe os links quando ativo */
+    display: flex; 
   }
 
-  /* Ajuste para garantir que o conteúdo não sobreponha a navbar */
   header {
-      margin-top: 70px;
-      position: relative;
+    margin-top: 70px;
+    position: relative;
   }
 
   .section__container {
-      padding: 3rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .header-image {
-      display: none; /* Remove a imagem no mobile */
+    display: none; 
   }
 
   .header-content {
-      padding: 1rem; /* Ajuste o espaçamento para dispositivos móveis */
-      text-align: left; /* Alinha o texto à esquerda para dispositivos móveis */
+    padding: 1rem; 
+    text-align: left; 
   }
+
   .media_slr h1 {
     font-size: 2rem;
   }
-  
+
   .media_slr h2 {
-   font-size: 1rem;
+    font-size: 1rem;
   }
 
   header h1 {
-      font-size: 2rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
+    font-size: 2rem;
   }
 
   header p {
-      font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
+    font-size: 1rem; 
   }
+
   .parcerias h2 {
     font-size: 2rem;
-}
-.veja_como p {
-  font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
-}
-.veja_como h2{
-  font-size: 2.5rem;
-}
-
-  .btn-cadastro {
-      font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
-      padding: 10px 15px; /* Ajuste o espaçamento interno do botão para dispositivos móveis */
   }
-  .btn-enter {
-    font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
-    padding: 10px 15px;
 
+  .veja_como p {
+    font-size: 1rem; 
   }
+
+  .veja_como h2 {
+    font-size: 2.5rem;
+  }
+
+  .btn-cadastro, .btn-enter {
+    font-size: 1rem; 
+    padding: 10px 15px; 
+  }
+
   .project__grid {
-      grid-template-columns: 1fr; /* Empilha os cards no mobile */
+    grid-template-columns: 1fr; 
   }
 
   .project__card__content, 
   .project__card__content_two, 
   .project__card__content_three {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
 
-
-/* Navbar geral */
 .nav__header {
   position: fixed;
   top: 0;
@@ -771,7 +754,6 @@ footer {
   padding: 0 20px;
 }
 
-/* Ajuste para o body para compensar a altura da navbar */
 body {
   padding-top: 60px;
 }
