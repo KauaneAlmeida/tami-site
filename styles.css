@@ -587,16 +587,19 @@ footer {
     font-size: 0.9rem;
     color: #ffffff;
 }
+
+
 @media screen and (max-width: 768px) {
   .nav__header {
       flex-direction: column;
-      padding: 1rem;
-      position: fixed; /* Garante que a navbar fique fixa no topo */
+      padding: 0.5rem; /* Reduzir o padding para economizar espaço */
+      position: fixed;
       width: 100%;
       top: 0;
       left: 0;
       z-index: 1000;
-      background: black; /* Ajuste para garantir visibilidade */
+      background: black;
+      height: 50px; /* Defina uma altura fixa para a navbar */
   }
 
   .nav__links {
@@ -605,7 +608,8 @@ footer {
   }
 
   header {
-      margin-top: 60px; /* Ajuste conforme a altura da navbar */
+      margin-top: 60px; /* Ajuste para garantir que o conteúdo não sobreponha a navbar */
+      position: relative;
   }
 
   .section__container {
@@ -618,18 +622,24 @@ footer {
   }
 
   .header-image {
-      position: relative;
+      position: absolute;
       top: 0;
+      left: 0;
       right: 0;
-      transform: none;
+      width: 100%;
+      height: 60vh;
+      z-index: -1;
+      object-fit: cover;
   }
 
   header h1 {
       font-size: 2.5em;
+      color: white;
   }
 
   header p {
       font-size: 1.2em;
+      color: white;
   }
 
   .btn-cadastro, .btn-enter {
@@ -664,6 +674,7 @@ footer {
   }
 }
 
+/* Navbar geral */
 .nav__header {
   position: fixed;
   top: 0;
@@ -671,8 +682,10 @@ footer {
   width: 100%;
   z-index: 1000;
   background: black;
+  height: 60px; /* altura padrão para desktop */
 }
 
+/* Ajuste para o body para compensar a altura da navbar */
 body {
   padding-top: 60px; /* Ajuste conforme a altura da navbar */
 }
