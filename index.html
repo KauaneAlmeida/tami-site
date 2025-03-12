@@ -239,64 +239,51 @@
             </div>
         </section>
          <hr>
-
-    </main>
-<!-- Seção de Login dentro do Rodapé -->
-<footer>
-    <section id="Login" class="login-section">
-        <div class="login-container">
-            <h1>Faça um salário ainda esse mês</h1>
-            <p>Você só precisa criar uma conta para poder realizar uma rápida entrevista e acessar os trabalhos disponíveis.</p>
-            <form id="form" action="https://script.google.com/macros/s/AKfycbweOnQ5GMWpe4ODLOJzA88YYuL3XqYAQkxe9wmWcUZa5iBb2f7z5udKkozPjNmkCYxCxQ/exec" method="POST">
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
-                <a href="formulario.html" class="button" id="criarContaBtn">Criar Conta</a>
-            </form>
-        </div>
-    </section>
-    <p>&copy; 2025 Plataforma Emprega Online - Todos os direitos reservados.</p>
-    <div class="refund-policy">
-        <p><strong>Atenção:</strong> Não realizamos reembolso para o Método Home Office. Por se tratar de um produto digital e de acesso vitalício, não temos controle sobre quem acessa ou compartilha o material após a compra. Ao efetuar o pagamento, você declara estar ciente e de acordo com esta política, compreendendo que não há possibilidade de estorno.</p>
-    </div>
-</footer>
-
-<script>
-    // Selecionando o botão "Criar Conta" e o formulário
-    const criarContaBtn = document.getElementById('criarContaBtn');
-    const form = document.getElementById('form');
-
-    // Adicionando um evento de clique
-    criarContaBtn.addEventListener('click', function(event) {
-        // Impede o link de ser seguido imediatamente
-        event.preventDefault();
-
-        // Verificando se todos os campos obrigatórios estão preenchidos
-        const inputs = form.querySelectorAll('input[required]');
-        let formValid = true;
-
-        // Verifica se algum campo obrigatório está vazio
-        inputs.forEach(input => {
-            if (!input.value) {
-                formValid = false;
-                input.style.borderColor = 'red'; // Destaca o campo não preenchido com borda vermelha
-            } else {
-                input.style.borderColor = ''; // Limpa o estilo se o campo estiver preenchido
-            }
-        });
-
-        // Se todos os campos estiverem preenchidos, exibe o delay e redireciona
-        if (formValid) {
-            // Exibe um pequeno delay de 3,5 segundos (3500 milissegundos)
-            setTimeout(function() {
-                window.location.href = criarContaBtn.href; // Redireciona para o link do botão
-            }, 2500); // 3500ms = 3,5 segundos
-        } else {
-            alert('Por favor, preencha todos os campos obrigatórios antes de continuar.');
-        }
-    });
-</script>
-
+     </main>
+         <footer>
+            <section id="Login" class="login-section">
+                <div class="login-container">
+                    <h1>Faça um salário ainda esse mês</h1>
+                    <p>Você só precisa criar uma conta para poder realizar uma rápida entrevista e acessar os trabalhos disponíveis.</p>
+                    <form id="form" action="https://script.google.com/macros/s/AKfycbweOnQ5GMWpe4ODLOJzA88YYuL3XqYAQkxe9wmWcUZa5iBb2f7z5udKkozPjNmkCYxCxQ/exec" method="POST">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+                     
+                        <button type="submit" class="button" id="criarContaBtn">Criar Conta</button>
+                    </form>
+                </div>
+            </section>
+        
+            <p>&copy; 2025 Plataforma Emprega Online - Todos os direitos reservados.</p>
+            
+            <div class="refund-policy">
+                <p><strong>Atenção:</strong> Não realizamos reembolso para o Método Home Office. Por se tratar de um produto digital e de acesso vitalício, não temos controle sobre quem acessa ou compartilha o material após a compra. Ao efetuar o pagamento, você declara estar ciente e de acordo com esta política, compreendendo que não há possibilidade de estorno.</p>
+            </div>
+        </footer>
+        
+        <script>
+            // Captura o envio do formulário
+            document.getElementById('form').onsubmit = function(event) {
+                event.preventDefault();  
+        
+                var formData = new FormData(event.target);
+        
+                fetch(event.target.action, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())  
+                .then(data => {
+                
+                    window.location.href = "formulario.html";  
+                })
+                .catch(error => {
+                    alert("Erro ao enviar o formulário. Tente novamente.");
+                });
+            };
+        </script>
+        
 
 
     <!-- Link para o JS do Swiper -->
