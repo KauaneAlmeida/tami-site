@@ -49,14 +49,14 @@ a:hover {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-image: url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?t=st=1741715799~exp=1741719399~hmac=db0dc6d11ffb3a0b3cbdd3c407e245d1c517c9d1676e6aa92b9f2051c5dea159&w=1060'); 
+  background-image: url('https://images.unsplash.com/photo-1624280433509-b01afeaf68e5?q=80&w=1615&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.; 
+  opacity: 1; 
   padding: 0.5rem 1rem;
-  
 }
+
 
 .nav__header {
   display: flex;
@@ -102,7 +102,7 @@ a:hover {
 /* Estilo do header */
 header {
   background-color: #ffffff;
-  background-image: url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?t=st=1741715799~exp=1741719399~hmac=db0dc6d11ffb3a0b3cbdd3c407e245d1c517c9d1676e6aa92b9f2051c5dea159&w=1060');
+  background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN25ybzA0bGo0OWt6NGhtN2RqdmgwMWxwNGhiZjl6bTFjZGE1ajI0aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RHIKETUlUINYvV7CAO/giphy.gif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -117,6 +117,13 @@ header {
   min-height: 400px; /* Define uma altura mínima para exibir bem o GIF */
   animation: moveBackground 30s infinite linear; /* Adiciona a animação */
 }
+
+/* Define a animação moveBackground */
+@keyframes moveBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: 100% 0; }
+}
+
 
 
 .header-content {
@@ -186,7 +193,19 @@ main {
   right: 10%;
   top: 50%;
   transform: translateY(-50%);
+  opacity: 0; /* Começa invisível */
+  animation: fadeIn 3s ease-in forwards; /* Adiciona a animação de fade-in */
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 header h1 {
   margin: 0;
