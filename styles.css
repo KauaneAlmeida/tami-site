@@ -312,6 +312,10 @@ section {
     color: #4e4caf;
     font-size: 60px; /* Aumenta o tamanho do texto do h2 */
 }
+.veja_como p {
+  color: #4e4caf;
+  font-size: 40px; /* Aumenta o tamanho do texto do h2 */
+}
 
 
 .btn-enter {
@@ -459,15 +463,14 @@ section {
     flex: 1;
     padding-right: 20px; /* Espaço entre o texto e o contador */
   }
-  
   .salary-container {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 24px; /* Convertendo rem para px */
   }
   
   .elementor-counter-number-wrapper {
-    font-size: 3rem;
+    font-size: 48px; /* Convertendo rem para px */
     display: flex;
     align-items: center;
     color: #4e4caf;
@@ -475,13 +478,12 @@ section {
   
   .elementor-counter-number-prefix,
   .elementor-counter-number-suffix {
-    font-size: 1.5rem;
+    font-size: 24px; /* Convertendo rem para px */
   }
   
   .salary-container span {
     margin-left: 10px;
   }
-  
   .job-info h1, .job-info h2, .job-info p { 
     color: #4e4caf;
 }
@@ -615,7 +617,24 @@ footer {
       text-align: center;
       padding: 1rem 0;
   }
+      
+  .salary-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    font-size: 18px; 
 
+  }
+
+  .elementor-counter-number-wrapper {
+    font-size: 36px; 
+  }
+
+  .elementor-counter-number-prefix,
+  .elementor-counter-number-suffix {
+    font-size: 18px; 
+
+  }
   .nav__links.active {
       display: flex; /* Exibe os links quando ativo */
   }
@@ -638,6 +657,13 @@ footer {
       padding: 1rem; /* Ajuste o espaçamento para dispositivos móveis */
       text-align: left; /* Alinha o texto à esquerda para dispositivos móveis */
   }
+  .media_slr h1 {
+    font-size: 2rem;
+  }
+  
+  .media_slr h2 {
+   font-size: 1rem;
+  }
 
   header h1 {
       font-size: 2rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
@@ -649,7 +675,9 @@ footer {
   .parcerias h2 {
     font-size: 2rem;
 }
-
+.veja_como p {
+  font-size: 1rem; /* Ajuste o tamanho da fonte para dispositivos móveis */
+}
 .veja_como h2{
   font-size: 2.5rem;
 }
