@@ -221,17 +221,6 @@ header p {
   font-size: 1.5em; /* Aumenta o tamanho da fonte */
 }
 
-.btn-cadastro {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px; /* Ajusta o tamanho do botão */
-  background-color: #4CAF50;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 40px; /* Ajusta o tamanho do texto */
-}
-
 /* Seções principais */
 main {
   padding: 40px;
@@ -723,12 +712,20 @@ footer {
   .veja_como h2 {
     font-size: 2.5rem;
   }
-
-  .btn-cadastro, .btn-enter {
-    font-size: 1rem; 
-    padding: 10px 15px; 
-  }
-
+  
+    .btn-cadastro, .btn-enter {
+      display: block;  /* Garante que os botões sejam exibidos como blocos */
+      width: 100%;  /* Define a largura dos botões como 100% do contêiner */
+      margin-top: 10px;
+      font-size: 1rem;
+      padding: 10px 15px;
+      background-color: #137e33; /* Cor de fundo para ambos os botões */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;  /* Centraliza o texto nos botões */
+    }
+    
   .project__grid {
     grid-template-columns: 1fr; 
   }
