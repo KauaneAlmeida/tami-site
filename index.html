@@ -30,61 +30,27 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!-- TikTok Pixel -->
+<!-- Meta Pixel Code -->
     <script>
-        !function (w, d, t) {
-            w.TiktokAnalyticsObject = t;
-            var ttq = w[t] = w[t] || [];
-            ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"];
-
-            ttq.setAndDefer = function (t, e) {
-                t[e] = function () {
-                    t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                };
-            };
-
-            for (var i = 0; i < ttq.methods.length; i++) {
-                ttq.setAndDefer(ttq, ttq.methods[i]);
-            }
-
-            ttq.instance = function (t) {
-                var e = ttq._i[t] || [];
-                for (var n = 0; n < ttq.methods.length; n++) {
-                    ttq.setAndDefer(e, ttq.methods[n]);
-                }
-                return e;
-            };
-
-            ttq.load = function (e, n) {
-                var r = "https://analytics.tiktok.com/i18n/pixel/events.js";
-                ttq._i = ttq._i || {};
-                ttq._i[e] = [];
-                ttq._i[e]._u = r;
-                ttq._t = {};
-                ttq._t[e] = +new Date;
-                ttq._o = ttq._o || {};
-                ttq._o[e] = n || {};
-
-                n = document.createElement("script");
-                n.type = "text/javascript";
-                n.async = true;
-                n.src = r + "?sdkid=" + e + "&lib=" + t;
-                n.onerror = function () {
-                    console.error("Erro ao carregar o TikTok Pixel! Verifique se o URL está correto.");
-                };
-                e = document.getElementsByTagName("script")[0];
-                e.parentNode.insertBefore(n, e);
-            };
-
-            ttq.load('CV8TD0BC77UC3LGT5DD0');
-            ttq.page();
-        }(window, document, 'ttq');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '973457361558779');
+    fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=973457361558779&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
-
 <body>
 
-    <!-- Barra de Navegação (agora está dentro do <body>) -->
+
     <nav class="nav__bar fade-in">
         <div class="nav__header">
             <div class="nav__logo">
@@ -107,8 +73,9 @@
                 01.<br>Vagas garantidas após o cadastro.</p>
             <a href="#Login" class="btn-cadastro">Cadastre-se agora</a>
         </div>
+        <canvas id="universe"></canvas>
     </header>
-    <hr>
+    
     <main>
         <section id="sobre" class="intro">
             <div class="intro-content">
@@ -124,15 +91,15 @@
                     plataforma tecnológica para o Brasil. <br> </p>
             </div>
         </section>
-        <hr>
+        
         <section id="servicos" class="parcerias fade-in">
             <h2>+100 Empresas <br> Parceiras!</h2>
             <p>Você terá acesso a oportunidades diárias para realizar serviços para empresas multinacionais e receber em
                 dólar pelo seu serviço!</p>
             <a href="#Login" class="btn-enter">Cadastre-se agora</a>
         </section>
-        <hr>
-        <section id="contato" class="marcas fade-in">
+        
+        <section id="contato" class="marcas">
             <h2>Marcas Parceiras</h2>
             <!-- Carrossel de Imagens -->
             <div class="swiper-container fade-in">
@@ -178,8 +145,7 @@
                 <div class="swiper-pagination fade-in"></div>
             </div>
         </section>
-
-        <hr>
+        
 
         <section id="servicos" class="veja_como">
             <h2>Veja como funciona!</h2>
@@ -188,7 +154,7 @@
 
         <section class="section__container project__container fade-in" id="project">
             <div class="project__grid fade-in">
-                <!-- Primeiro Card -->
+              
                 <div class="project__card fade-in">
                     <div class="project__card__details fade-in">
                         <div class="project__card__content fade-in">
@@ -201,7 +167,7 @@
                     </div>
                 </div>
 
-                <!-- Segundo Card -->
+            
                 <div class="project__card fade-in">
                     <div class="project__card__details fade-in">
                         <div class="project__card__content_two fade-in">
@@ -213,7 +179,7 @@
                     </div>
                 </div>
 
-                <!-- Terceiro Card -->
+           
                 <div class="project__card fade-in">
                     <div class="project__card__details">
                         <div class="project__card__content_three">
@@ -225,9 +191,8 @@
                     </div>
                 </div>
 
-
         </section>
-        <hr>
+        
         <section id="Contato" class="media_slr">
             <h1>Média dos salários</h1>
             <h2>Esses são números reais que os membros de nossa plataforma ganham.</h2>
@@ -320,7 +285,7 @@
                 <span>Por mês</span>
             </div>
         </section>
-        <hr>
+        
     </main>
     <footer>
         <section id="Login" class="login-section">
@@ -375,25 +340,69 @@
 
     <script defer src="script.js"></script>
 
-    <!-- Link para o JS do Swiper -->
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         // Inicializa o Swiper
         var swiper = new Swiper('.swiper-container', {
-            loop: true,        // Habilita o loop
-            autoplay: {        // Ativa o autoplay
-                delay: 500,    // Atraso de 0,5 segundos entre as transições
-                disableOnInteraction: false,  // Mantém o autoplay mesmo ao interagir
+            loop: true,      
+            autoplay: {        
+                delay: 500,    
+                disableOnInteraction: false,  
             },
-            slidesPerView: 3,   // Exibe 3 slides por vez
-            spaceBetween: 30,    // Espaçamento entre os slides
-            pagination: {       // Ativa a paginação com pontos
+            slidesPerView: 3,   
+            spaceBetween: 30,    
+            pagination: {       
                 el: '.swiper-pagination',
                 clickable: true,
             },
         });
-
     </script>
+
+     
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function animateCounter(element, start, end, duration) {
+                let startTime = null;
+        
+                function step(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    let progress = Math.pow(Math.min((currentTime - startTime) / duration, 1), 0.7);
+                    element.innerText = Math.floor(progress * (end - start) + start).toLocaleString("pt-BR");
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    }
+                }
+        
+                requestAnimationFrame(step);
+            }
+        
+            function startCounting(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        let counter = entry.target;
+                        let endValue = parseInt(counter.getAttribute("data-to-value"));
+                        let duration = parseInt(counter.getAttribute("data-duration"));
+        
+                        animateCounter(counter, 0, endValue, duration);
+                        observer.unobserve(counter); 
+                    }
+                });
+            }
+        
+            let options = { threshold: 0.5 };
+            let observer = new IntersectionObserver(startCounting, options);
+        
+            document.querySelectorAll(".elementor-counter-number").forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+        </script>
+
+
+  
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+     <script src="stars.js"></script>
 
 
 </body>

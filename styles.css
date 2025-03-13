@@ -166,7 +166,7 @@ header p {
 /* Seções principais */
 main {
   padding: 40px;
-  background: #fff;
+  background: #ffffff;
   max-width: 800px;
   margin: 0 
 }
@@ -224,7 +224,7 @@ header p {
 /* Seções principais */
 main {
   padding: 40px;
-  background: #fff;
+  background: #0f172a;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -244,7 +244,7 @@ main {
 /* Seções principais */
 main {
     padding: 40px;
-    background: #fff;
+    background: #0f172a;
     max-width: 800px;
     margin: 0 auto;
     max-width: 100vw;  
@@ -265,7 +265,7 @@ section {
     width: 100%; 
     align-items: left;
     text-align: center;
-    color:  #4e4caf;
+    color:  #fff;
     background: linear-gradient; 
 }
 
@@ -276,7 +276,7 @@ section {
     font-size: 20px;
     background: linear-gradient(
       to left bottom,
-      #4e4caf 65%,
+      #fff 65%,
       var(--primary-color-dark)
     );
     -webkit-background-clip: text;
@@ -284,13 +284,23 @@ section {
     text-align: center;
   }
   
+  
+#universe {
+  position: fixed; /* Mantém o fundo fixo */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Joga o canvas para o fundo */
+  pointer-events: none; /* Impede que o canvas bloqueie interações do mouse */
+}
 
 
 
 .parcerias {
     width: 100%; 
     height: auto; 
-    border-radius: 5px;
+    border-radius: 40px;
     background-color: #000524;
     text-align: center; 
     padding: 20px; 
@@ -305,8 +315,8 @@ section {
 }
 
 .veja_como {
-    border-radius: 5px;
-    background-color: #fafafa;
+    border-radius: 40px;
+    background-color: #000524;
     text-align: center; 
     padding: 20px; 
     text-align: center; 
@@ -315,11 +325,11 @@ section {
 }
 
 .veja_como h2{
-    color: #4e4caf;
+    color: #fff;
     font-size: 60px; 
 }
 .veja_como p {
-  color: #4e4caf;
+  color: #fff;
   font-size: 40px; 
 }
 
@@ -338,14 +348,14 @@ section {
 .marcas {
     padding: 5px;
     border-radius: 40px;
-    background-color: #fafafa;
+    background-color: #000524;
     text-align: center; 
     height: 310px;
     margin-bottom: 3rem
 }
 
 .marcas h2 {
-    color: #181818;
+    color: #fff;
     font-size: 40px; 
 }
 
@@ -376,8 +386,8 @@ section {
     background-color:  #000524;
     border-radius: 2rem;
     margin-bottom: 4rem;
-   font-size: 2rem;
-   font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
   }
   
   
@@ -439,8 +449,8 @@ section {
 
 
 .media_slr {
-    border-radius: 5px;
-    background-color: #fafafa;
+    border-radius: 40px;
+    background-color: #000524;
     text-align: center; 
     padding: 20px; 
     text-align: center; 
@@ -449,12 +459,12 @@ section {
 }
 
 .media_slr h1 {
-  color: #4e4caf;
+  color: #fff;
   font-size: 60px; 
 }
 
 .media_slr h2 {
-  color: #4e4caf;
+  color: #fff;
   font-size: 40px; 
 }
 
@@ -482,7 +492,7 @@ section {
     font-size: 48px;
     display: flex;
     align-items: center;
-    color: #4e4caf;
+    color: #fff;
   }
   
   .elementor-counter-number-prefix,
@@ -492,9 +502,10 @@ section {
   
   .salary-container span {
     margin-left: 10px;
+    color: #fff;
   }
   .job-info h1, .job-info h2, .job-info p { 
-    color: #4e4caf;
+    color: #fff;
 }
 
 
@@ -579,7 +590,7 @@ footer {
 .refund-policy {
     margin-top: 15px;
     font-size: 1rem;
-    color: #384bbb;
+    color: #fff;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -635,7 +646,7 @@ footer {
   }
 
   .job-description h1, .job-description h2, .job-description p {
-    color: #4e4caf;
+    color: #fff;
   }
 
   .salary-container {
@@ -652,7 +663,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center; 
-    color: #4e4caf;
+    color: #fff;
     flex-wrap: wrap; 
   }
 
