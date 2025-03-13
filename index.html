@@ -51,7 +51,7 @@
 <body>
 
 
-    <nav class="nav__bar fade-in">
+    <nav class="nav__bar">
         <div class="nav__header">
             <div class="nav__logo">
                 <a href="#">Emprega Online</a>
@@ -65,7 +65,7 @@
         </div>
     </nav>
 
-    <header id="home" class="fade-in">
+    <header id="home" class="reveal">
         <div class="header-content fade-in">
             <img src="img-pic.gif" alt="Imagem do Cabeçalho" class="header-image">
             <h1>A maior plataforma de <br> contratação Home Office do <br> Brasil!</h1> <br>
@@ -77,7 +77,7 @@
     </header>
     
     <main>
-        <section id="sobre" class="intro">
+        <section id="sobre" class="intro reveal">
             <div class="intro-content">
                 <h2>Conectamos você com a <br> vaga que mais combina com <br> seu perfil</h2>
                 <p>O trabalho remoto ganhou grande popularidade <br> durante a pandemia. Trabalhar online
@@ -92,14 +92,14 @@
             </div>
         </section>
         
-        <section id="servicos" class="parcerias fade-in">
+        <section id="servicos" class="parcerias reveal">
             <h2>+100 Empresas <br> Parceiras!</h2>
             <p>Você terá acesso a oportunidades diárias para realizar serviços para empresas multinacionais e receber em
                 dólar pelo seu serviço!</p>
             <a href="#Login" class="btn-enter">Cadastre-se agora</a>
         </section>
         
-        <section id="contato" class="marcas">
+        <section id="contato" class="marcas reveal">
             <h2>Marcas Parceiras</h2>
             <!-- Carrossel de Imagens -->
             <div class="swiper-container fade-in">
@@ -147,12 +147,12 @@
         </section>
         
 
-        <section id="servicos" class="veja_como">
+        <section id="servicos" class="veja_como reveal">
             <h2>Veja como funciona!</h2>
             <p>É simples, rápido e prático.</p>
         </section>
 
-        <section class="section__container project__container fade-in" id="project">
+        <section class="section__container project__container reveal" id="project">
             <div class="project__grid fade-in">
               
                 <div class="project__card fade-in">
@@ -193,12 +193,12 @@
 
         </section>
         
-        <section id="Contato" class="media_slr">
+        <section id="Contato" class="media_slr reveal">
             <h1>Média dos salários</h1>
             <h2>Esses são números reais que os membros de nossa plataforma ganham.</h2>
         </section>
 
-        <section class="job-info fade-in">
+        <section class="job-info reveal">
             <div class="job-description fade-in">
                 <h1>Função</h1>
                 <h2>Suporte ao cliente</h2>
@@ -233,7 +233,7 @@
             </div>
         </section>
 
-        <section class="job-info fade-in">
+        <section class="job-info reveal">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Redator de textos e artigos</h2>
@@ -250,7 +250,7 @@
             </div>
         </section>
 
-        <section class="job-info fade-in">
+        <section class="job-info reveal">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Afiliado Shopee</h2>
@@ -268,7 +268,7 @@
             </div>
         </section>
 
-        <section class="job-info fade-in">
+        <section class="job-info reveal">
             <div class="job-description">
                 <h1>Função</h1>
                 <h2>Afiliado Ton</h2>
@@ -398,6 +398,30 @@
             });
         });
         </script>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const elements = document.querySelectorAll(".reveal");
+    
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("active");
+                        observer.unobserve(entry.target); // Para evitar que execute novamente
+                    }
+                });
+            },
+            { threshold: 0.5 } // Define a porcentagem do elemento visível para ativar o efeito
+        );
+    
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+    </script>
+    
 
 
   
