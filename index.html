@@ -343,21 +343,22 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // Inicializa o Swiper
         var swiper = new Swiper('.swiper-container', {
-            loop: true,      
-            autoplay: {        
-                delay: 500,    
-                disableOnInteraction: false,  
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true, 
+            speed: 2000, 
+            autoplay: {
+                delay: 0, 
+                disableOnInteraction: false, 
             },
-            slidesPerView: 3,   
-            spaceBetween: 30,    
-            pagination: {       
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            loopedSlides: 10, 
         });
     </script>
+    
+
+
 
      
     <script>
