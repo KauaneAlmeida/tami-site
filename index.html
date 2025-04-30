@@ -319,23 +319,30 @@
         // Captura o envio do formulário
         document.getElementById('form').onsubmit = function (event) {
             event.preventDefault();
-
+    
             var formData = new FormData(event.target);
-
+    
+            // Verifica no console se o email está sendo capturado
+            console.log("Nome:", formData.get("nome"));
+            console.log("Email:", formData.get("email"));
+            console.log("WhatsApp:", formData.get("whatsapp"));
+    
             fetch(event.target.action, {
                 method: 'POST',
                 body: formData
             })
                 .then(response => response.text())
                 .then(data => {
-
+                    // Redireciona após envio
                     window.location.href = "formulario.html";
                 })
                 .catch(error => {
                     alert("Erro ao enviar o formulário. Tente novamente.");
+                    console.error("Erro:", error);
                 });
         };
     </script>
+    
 
 
     <script defer src="script.js"></script>
